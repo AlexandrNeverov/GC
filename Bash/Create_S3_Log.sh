@@ -37,9 +37,9 @@ aws s3api put-bucket-encryption \
 
 # 5. Add recomended ACL for log delivery
 
-aws s3api put-bucket-acl \
-    --bucket "$LOG_BUCKET" \
-    --grant-write 'URI="http://acs.amazonaws.com/groups/s3/LogDelivery"' \
-    --grant-read-acp 'URI="http://acs.amazonaws.com/groups/s3/LogDelivery"'
-
-echo "Created secure S3 log bucket: $LOG-BUCKET"
+#aws s3api put-bucket-acl \
+ #   --bucket "$LOG_BUCKET" \
+  #  --grant-write 'URI="http://acs.amazonaws.com/groups/s3/LogDelivery"' \
+   # --grant-read-acp 'URI="http://acs.amazonaws.com/groups/s3/LogDelivery"'
+#
+echo "Created secure S3 log bucket: $LOG_BUCKET"
